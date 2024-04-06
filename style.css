@@ -8,6 +8,8 @@ body {
 
 h1 {
   font-style: italic;
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 
 .container {
@@ -19,21 +21,28 @@ h1 {
   width: 600px;
 }
 
-.block{
+#blocks {
   display: flex;
   flex-direction: row;
 }
 
-.blocked-h3 {  
+.block{
+  width: 150px;  
+  margin: 5px;
   color: black;
   font-style: italic;
   background-color: white;
   border-radius: 5px;
   text-align: center;
-  margin: 5px;
-  padding: 35px;
   display: flex;
   align-items: center;
+}
+
+.blocked-h3 {  
+  text-align: center;
+  padding: 35px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .center {
@@ -41,7 +50,45 @@ h1 {
 }
 
 h2 {
+  font-size: 30px;
+  margin-top: 150px;
+  font-style: italic;
+  text-align: center;
+}
+
+.input {
+  margin: 10px;
+  border: black;
+  background-color: white;
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+i {
+  color: gray;
+}
+
+input {
+  margin-left: 10px;
+  border: white;
   font-style: italic;
 }
 
+#submit_button {
+  text-align: center;
+}
 
+#submit {
+  font-style: normal;
+  font-weight: bold;
+  background-color: orange;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  margin-top: 20px;
+}
