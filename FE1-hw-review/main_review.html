@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LIKE LION_KOO</title>
+        <link rel="stylesheet" href="style_review.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <img src="../likelion.png" , width="200px" , height="100px" , alt="LIKE LION" />
+                <h1>LIKE LION</h1>
+                <p>
+                    우리는 '성장 의지를 가진 사람들을 돕기 위해' 존재합니다. 그리고<br />
+                    이들을 돕기 위한 가장 근본적이고 효과적인 방법은 교육이라고 생<br />
+                    각합니다 <br /><br />
+                    지금 바로 지원하세요!
+                </p>
+                <!-- id를 함부러 사용하면 안돼요! -->
+                <div id="blocks">
+                    <div class="block">
+                        <h3 class="blocked-h3">Plan<br />&<br />Design</h3>
+                    </div>
+                    <div class="block">
+                        <h3 class="blocked-h3">Frontend</h3>
+                    </div>
+                    <div class="block">
+                        <h3 class="blocked-h3">Backend</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="center"></div> -->
+            <div class="right">
+                <h2>LOGIN</h2>
+                <!-- 로그인 같이 사용자에게 입력을 받는 경우 form으로 감싸주시면 좋습니다 -->
+                <form>
+                    <!-- 
+                    class name이랑 태그랑 동일하면 가독성이 떨어집니다.
+                    차라리 input-box, input-container, 혹은 input-wrap정도가 좋을 것 같네요
+                -->
+                    <div class="input">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="ID" />
+                    </div>
+                    <div class="input">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="PW" />
+                    </div>
+                    <div id="submit_button">
+                        <input id="submit" type="submit" value="로그인 후 지원하기" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

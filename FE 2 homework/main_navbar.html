@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LIKE LION_KOO</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style_navbar.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -12,34 +12,45 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <script src="./main_navbar.js" defer></script>
     </head>
     <body>
         <div class="container">
             <div class="left">
-                <img src="likelion.png" , width="200px" , height="100px" , alt="LIKE LION" />
-                <h1>LIKE LION</h1>
+                <nav class="navbar">
+                    <img src="../likelion.png" , width="200px" , height="100px" , alt="LIKE LION" />
+                    <h1>LIKE LION</h1>
+                    <div class="loginBtn">로그인</div>
+                </nav>
                 <p>
                     우리는 '성장 의지를 가진 사람들을 돕기 위해' 존재합니다. 그리고<br />
                     이들을 돕기 위한 가장 근본적이고 효과적인 방법은 교육이라고 생<br />
                     각합니다 <br /><br />
                     지금 바로 지원하세요!
                 </p>
-                <div class="blocks">
-                    <div>
-                        <h3>Plan<br />&<br />Design</h3>
-                    </div>
-                    <div>
-                        <h3>Frontend</h3>
-                    </div>
-                    <div>
-                        <h3>Backend</h3>
+                <div class="navbar-center">
+                    <p class="navbar-p">
+                        우리는 '성장 의지를 가진 사람들을 돕기 위해' 존재합니다.<br />
+                        그리고 이들을 돕기 위한 가장 근본적이고 효과적인 방법은<br />
+                        교육이라고 생각합니다 <br /><br />
+                        지금 바로 지원하세요!
+                    </p>
+                    <div class="blocks">
+                        <div>
+                            <h3>Plan<br />&<br />Design</h3>
+                        </div>
+                        <div>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div>
+                            <h3>Backend</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="center"></div>
             <div class="right">
                 <h2>LOGIN</h2>
-                <form>
+                <form class="login-form">
                     <div class="input-container">
                         <i class="fa-solid fa-user"></i>
                         <input type="text" placeholder="ID" />
