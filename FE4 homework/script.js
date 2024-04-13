@@ -17,12 +17,26 @@ let computerScore = 0;
 const deleteResult = (deleteId) => {
     //...
     //
-    gameRecord
+    for (let i = 0; i < gameRecord.length; i++) {
+        if (gameRecord[i].id === deleteId) {
+            res = gameRecord[i].result;
+            if (res === '이겼다!') userScore--;
+            else if (res === '졌다!') computerScore--;
+            gameRecord.splice(i, 1);
+        }
+    }
+    updateRecord();
+    updateScore();
 };
 
 /*기록 전체 삭제*/
 const deleteAllResult = () => {
     //...
+    //
+    gameRecord = [];
+    userScore = computerScore = 0;
+    updateRecord();
+    updateScore();
 };
 
 /*점수 업데이트*/
@@ -80,8 +94,8 @@ const showResult = (user, computer, resultMsg) => {
 };
 
 /*배열 gameRecord에 결과 추가*/
-const addResult = (msg) => {
-    gameRecord = gameRecord.concat({ id: Date.now(), message: msg });
+const addResult = (msg, res) => {
+    gameRecord = gameRecord.concat({ id: Date.now(), message: msg, result: res });
 
     updateRecord();
 };
@@ -110,7 +124,7 @@ const play = (user, computer) => {
     }
 
     const recordMsg = `나: ${user} | 컴퓨터: ${computer} | 결과: ${message}`;
-    addResult(recordMsg);
+    addResult(recordMsg, message);
     showResult(user, computer, message);
 };
 
@@ -125,4 +139,5 @@ const start = (e) => {
 rockBtn.addEventListener('click', start);
 scissorsBtn.addEventListener('click', start);
 paperBtn.addEventListener('click', start);
+allDeleteBtn.addEventListener('click', deleteAllResult);
 //..
